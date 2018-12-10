@@ -24,12 +24,7 @@ namespace HMF
                 }
             }
         }
-
-
-
         
-
-
         #region Constructor
         public CustomMenuPageViewModel()
         {
@@ -44,13 +39,13 @@ namespace HMF
             ListCategories.Add(new MenuModel
             {
                 IdMenu = 2,
-                TitleItemMenu = "Evaluación de equipo y herramienta",
+                TitleItemMenu = "Opción 1",
                 ImageItemMenu = ""
             });
             ListCategories.Add(new MenuModel
             {
                 IdMenu = 3,
-                TitleItemMenu = "Inspección trimestral",
+                TitleItemMenu = "Opción 2",
                 ImageItemMenu = ""
             });
         }
@@ -63,6 +58,7 @@ namespace HMF
         #region Methods
         private void TapCerrarSesion()
         {
+            Application.Current.MainPage.DisplayAlert("d","d","d");
         }
         private async void OnTapSelectedCategories()
         {
@@ -70,7 +66,11 @@ namespace HMF
             {
                 App.MasterDetail.IsPresented = false;
             }
-         
+            else if (SelectedCategories.IdMenu == 2)
+            {
+                Application.Current.MainPage.DisplayAlert("d", "d", "d");
+            }
+
         }
         #endregion
     }

@@ -17,6 +17,11 @@
                     Text="Menú"
                     FontSize="Large"
                     FontAttributes="Bold"/>
+                <Image Source="rs.jpg"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
             </StackLayout>
             <ListView
                 Footer=""

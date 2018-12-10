@@ -15,6 +15,7 @@ namespace HMF
 		public CustomMenuPage ()
 		{
 			InitializeComponent ();
-		}
+            this.BindingContext = new CustomMenuPageViewModel();
+        }
 	}
 }
